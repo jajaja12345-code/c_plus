@@ -5,6 +5,10 @@
 #include <math.h>
 #include <map>
 
+
+
+//////////////////////////////////////////////できてない
+
 typedef long long LL;
 
 const long long INF = 1LL << 60;
