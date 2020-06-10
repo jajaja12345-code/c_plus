@@ -7,7 +7,7 @@
 
 typedef long long LL;
 
-const long long INF = 1LL << 60;
+constexpr long long INFLL = 1e18;
 
 using namespace std;
 
@@ -35,7 +35,8 @@ int main()
     while (N > 0)
     {
         //if (ans > 1e18)  これだとifの中に入らないになる
-        if (ans > 1000000000000000000 / A.at(N - 1))
+        //if (ans > 1000000000000000000 / A.at(N - 1))
+        if (ans > INFLL / A.at(N - 1))
         {
             cout << -1 << endl;
             return 0;
