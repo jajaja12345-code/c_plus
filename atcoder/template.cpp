@@ -5,6 +5,8 @@
 #include <math.h>
 #include <map>
 #include <iomanip>
+#include <stdio.h>
+#include <bitset>
 
 typedef long long LL;
 
