@@ -25,11 +25,11 @@ void judge_prime(int N)
     prime.at(0) = false;
     prime.at(1) = false;
 
-    for (size_t i = 2; i <= sqrt(N); i++)
+    for (int i = 2; i <= sqrt(N); i++)
     {
         if (prime.at(i))
         {
-            for (size_t j = 2; j * i <= N; j++)
+            for (int j = 2; j * i <= N; j++)
             {
                 prime.at(i * j) = false;
             }
@@ -45,6 +45,8 @@ int main()
     judge_prime(N);
 
     for (size_t i = 0; i < prime.size(); i++)
+    //コンテナforの時はsize_tが良い
+    //size_tはコンテナ要素数の最大値まで対応できる
     {
         if (prime.at(i))
         {
