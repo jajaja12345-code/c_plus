@@ -57,13 +57,13 @@ int main()
     {
         A = solve(A - 1);
     }
-    bitset<64> bsA(A);
-    bitset<64> bsB(solve(B));
+    // bitset<64> bsA(A);
+    // bitset<64> bsB(solve(B));
 
     // cout << bsA.to_ullong() << endl;
     // cout << bsB.to_ullong() << endl;
 
-    cout << (bsA ^ bsB).to_ullong() << endl;
+    cout << (A ^ solve(B)) << endl;
 
     return 0;
 }
