@@ -21,7 +21,7 @@ int main()
 
     ll ans = 0;
 
-    int max_i;
+    ll max_i;
 
     for (int i = 1; i <= n; i++)
     {
