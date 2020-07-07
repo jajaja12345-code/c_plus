@@ -25,7 +25,8 @@ int main()
         cin >> a.at(i);
     }
 
-    sort(a.begin(), a.end(), std::greater<int>());
+    //sort(a.begin(), a.end(), std::greater<int>());
+    std::sort(a.rbegin(), a.rend());
 
     ll ans = 0;
     ans = a.at(0);
