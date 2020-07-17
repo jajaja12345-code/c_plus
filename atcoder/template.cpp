@@ -8,11 +8,11 @@
 #include <stdio.h>
 #include <bitset>
 
-typedef long long LL;
-
 constexpr long long INFLL = 1e18;
 
 using namespace std;
+using ll = long long;
+using P = pair<int, int>;
 
 int main()
 {
