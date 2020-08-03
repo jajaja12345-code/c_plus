@@ -22,8 +22,6 @@ int main()
     cin >> n;
     vector<int> s(n);
     char temp;
-    // int checkW = 0;
-    // int checkR = 0;
     for (int i = 0; i < n; i++)
     {
         cin >> temp;
@@ -46,9 +44,6 @@ int main()
     {
         if (s.at(i) == 0)
         {
-            while (s.at(r) == 0 && i < r)
-            {
-                /*
             while (s.at(r) == 0)
             {
                 if (i >= r)
@@ -56,17 +51,19 @@ int main()
                     che = true;
                     break;
                 }
-                */
 
                 r--;
             }
-            /*
-        if (che)
-        {
-            break;
-        }
-        */
+
+            if (che)
+            {
+                break;
+            }
+
             // r--;
+            // count++;
+            // これだとだめ
+
             if (r > i)
             {
                 r--;
@@ -74,13 +71,6 @@ int main()
             }
         }
     }
-    /*
-    if (che == false && i == 0 && r == 0)
-    {
-        count = 0;
-    }
-    */
-
     cout << count << endl;
     return 0;
 }
