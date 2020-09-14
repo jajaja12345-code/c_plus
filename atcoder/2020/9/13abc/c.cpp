@@ -21,16 +21,22 @@ int main() {
   ll n;
   cin >> n;
   ll ans;
-  ll pm = 1e9 + 7;
+  ll pn = 1e9 + 7;
   if (n == 1) {
     ans = 0;
   } else {
-    ans = n * (n - 1);
-    ll temp1, temp2;
-    for (int i = 0; i <= n - 2; i++) {
-            for (int j = n - 2 - i; j >= 0; j--) {
-      }
-      ans = ans * 10 % pm;
+    ans = 1;
+    ll temp1 = 1;
+    ll temp2 = 1;
+    for (int i = 0; i < n; i++) {
+      ans = ans * 10 % pn;
+      temp1 = temp1 * 8 % pn;
+      temp2 = temp2 * 9 % pn;
+    }
+    ans = ans - temp2 * 2 + temp1;
+    ans %= pn;
+    if (ans < 0) {
+      ans += pn;
     }
   }
   cout << ans << endl;
