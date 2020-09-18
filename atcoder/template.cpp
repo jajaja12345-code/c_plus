@@ -12,7 +12,7 @@
 #include <vector>
 
 constexpr long long INFLL = 1e18;
-constexpr long long aCdrPN = 1e9 + 7;
+constexpr long long aPN = 1e9 + 7;
 
 using namespace std;
 using ll = long long;
