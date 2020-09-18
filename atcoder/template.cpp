@@ -11,6 +11,7 @@
 #include <set>
 
 constexpr long long INFLL = 1e18;
+constexpr long long atcoderP = 1e9 + 7;
 
 using namespace std;
 using ll = long long;
