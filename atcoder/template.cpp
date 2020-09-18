@@ -1,24 +1,21 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#include <string.h>
 #include <math.h>
-#include <map>
-#include <iomanip>
 #include <stdio.h>
+#include <string.h>
+
+#include <algorithm>
 #include <bitset>
+#include <iomanip>
+#include <iostream>
+#include <map>
 #include <queue>
 #include <set>
+#include <vector>
 
 constexpr long long INFLL = 1e18;
-constexpr long long atcoderP = 1e9 + 7;
+constexpr long long aCdrPN = 1e9 + 7;
 
 using namespace std;
 using ll = long long;
 using P = pair<int, int>;
 
-int main()
-{
-
-    return 0;
-}
+int main() { return 0; }
